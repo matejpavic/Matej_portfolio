@@ -1,0 +1,67 @@
+header {
+  height: 7vh;
+  position: sticky;
+  top: 0;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 10vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  nav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      box-sizing: border-box;
+      height: 5vh;
+      margin: 0 10px;
+    }
+    img:hover {
+      height: 6vh;
+    }
+  }
+  div {
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-right: 10%;
+    a {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 600;
+    }
+    a:hover {
+      font-weight: 700;
+    }
+  }
+}
+
+.hidden_list {
+  display: none;
+}
+
+.navbarDisplay {
+  // here i write what will happend when button is clicked
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  top: 3vh;
+  position: absolute;
+  font-size: 2em;
+  border-radius: 10%;
+  padding: 2% 5%;
+  // padding-left: 5%;
+  list-style-type: none;
+  li {
+    a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    a:hover {
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
