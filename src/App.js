@@ -22,6 +22,7 @@ class App extends Component {
         <Header navbarOut = { navbarOut } handleNavbar = { this.handleNavbar }/>
         <main>
           <Clock />
+          <h1 data-text="back in black">It's time for a great project</h1>
         </main>
       </div>
     );
