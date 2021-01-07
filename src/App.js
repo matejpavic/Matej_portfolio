@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import './App.css';
 import Header from './Header/Header';
+import Clock from './Clock/Clock';
 
 class App extends Component {
   constructor() {
@@ -20,7 +21,7 @@ class App extends Component {
       <div className="App">
         <Header navbarOut = { navbarOut } handleNavbar = { this.handleNavbar }/>
         <main>
-  
+          <Clock />
         </main>
       </div>
     );
