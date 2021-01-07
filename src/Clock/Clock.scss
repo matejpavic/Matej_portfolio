@@ -1,3 +1,7 @@
+@import "./variables";
+
+// $size: 300px;
+
 .clock-wrapper {
   display: flex;
   justify-content: center;
@@ -6,8 +10,8 @@
 }
 
 .clock {
-  width: 300px;
-  height: 300px;
+  width: $size;
+  height: $size;
   border-radius: 50%;
   background-image: url("clock_images/clockBackground.png");
   background-size: cover;
@@ -18,17 +22,20 @@
         background-color: #2a2f40;*/
   justify-content: center;
   align-items: center;
-  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
-    inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
-    inset 0 15px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 calc(-0.05 * #{$size}) calc(0.05 * #{$size})
+      rgba(255, 255, 255, 0.05),
+    inset 0 calc(-0.05 * #{$size}) calc(0.05 * #{$size})
+      rgba(255, 255, 255, 0.05),
+    0 calc(0.05 * #{$size}) calc(0.05 * #{$size}) rgba(0, 0, 0, 0.3),
+    inset 0 calc(0.05 * #{$size}) calc(0.05 * #{$size}) rgba(0, 0, 0, 0.3);
 }
 /*align-items: center;
         background-color: #ff6d39;
         margin-left: 93px;*/
 .clock::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: calc(0.05 * #{$size});
+  height: calc(0.05 * #{$size});
   position: absolute;
   background-color: #fff;
   border-radius: 50%;
@@ -44,18 +51,18 @@
         background-color: #ff6d39;
         margin-left: 93px;*/
 .hr {
-  width: 160px;
-  height: 160px;
+  width: calc((160 / 300) * #{$size});
+  height: calc((160 / 300) * #{$size});
 }
 
 .mn {
-  width: 190px;
-  height: 190px;
+  width: calc((190 / 300) * #{$size});
+  height: calc((190 / 300) * #{$size});
 }
 
 .sc {
-  width: 230px;
-  height: 230px;
+  width: calc((230 / 300) * #{$size});
+  height: calc((230 / 300) * #{$size});
 }
 
 .hr,
@@ -69,11 +76,11 @@
         margin-left: 93px;*/
 .hr::before {
   content: "";
-  width: 8px;
-  height: 80px;
-  background-color: #d4af37;
+  width: calc((8 / 300) * #{$size});
+  height: calc((80 / 300) * #{$size});
+  background-color: $hr_color;
   z-index: 100;
-  border-radius: 5px;
+  border-radius: calc((5 / 300) * #{$size});
 }
 /*content: "";
         height: 395px;
@@ -81,20 +88,20 @@
         background-color: #2a2f40;*/
 .mn::before {
   content: "";
-  width: 6px;
-  height: 90px;
-  background-color: #e0c56e;
+  width: calc((6 / 300) * #{$size});
+  height: calc((90 / 300) * #{$size});
+  background-color: $mn_color;
   z-index: 11;
-  border-radius: 5px;
+  border-radius: calc((5 / 300) * #{$size});
 }
 /*align-items: center;
         background-color: #ff6d39;
         margin-left: 93px;*/
 .sc::before {
   content: "";
-  width: 2px;
-  height: 140px;
-  background-color: #fff;
+  width: calc((2 / 300) * #{$size});
+  height: calc((140 / 300) * #{$size});
+  background-color: $sc_color;
   z-index: 10;
-  border-radius: 5px;
+  border-radius: calc((5 / 300) * #{$size});
 }
