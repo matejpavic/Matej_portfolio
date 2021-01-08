@@ -4,8 +4,8 @@ header {
   position: sticky;
   top: 0;
   color: white;
-  background: -webkit-gradient(linear, left top, right top, from(#a7a7da), to(#535e64));
-  background: linear-gradient(to right, #a7a7da, #535e64);
+  background: -webkit-gradient(linear, left top, right top, from(#8181a1), to(#535e64));
+  background: linear-gradient(to right, #8181a1, #535e64);
   margin-bottom: 10vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
