@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900");
 .App {
   text-align: center;
   margin: 0;
   background-color: #091921;
   min-height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
 }
+
+// ------------ h1 styles --------------------
+
+@import url("https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900");
 
 h1 {
   text-transform: Uppercase;
@@ -19,7 +21,6 @@ h1 {
 
 h1 {
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(#a7a7da), to(#535e64));
   background: linear-gradient(to right, #a7a7da, #535e64);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -40,7 +41,9 @@ h1:before {
 
 h1:after {
   z-index: -2;
-  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5), 20px 20px 20px rgba(0, 0, 0, 0.4), 30px 30px 30px rgba(0, 0, 0, 0.1);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5),
+    20px 20px 20px rgba(0, 0, 0, 0.4), 30px 30px 30px rgba(0, 0, 0, 0.1);
   mix-blend-mode: multiply;
 }
-/*# sourceMappingURL=App.css.map */
+
+// ------------------------------------------
