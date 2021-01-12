@@ -1,5 +1,6 @@
 import './Header.css';
 import navbarSymbol from './header_images/navbarSymbol.svg';
+import xSymbol from './header_images/xSymbol.svg';
 import React, { useState } from 'react';
 
 
@@ -12,7 +13,7 @@ const Header = () => {
     return (
         <header>
             <nav onClick={handleNavbar}>
-                <img src={navbarSymbol} alt='navbar'/>
+                <img src={`${!navbarOut ? navbarSymbol : xSymbol}`} alt='navbar'/>
                 <ul className=
                 {`${!navbarOut ? 'hidden_list' : 'navbarDisplay'}`}>
                     <li><a href="projects.html">Projects</a></li>
