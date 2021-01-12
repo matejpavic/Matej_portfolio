@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import './App.css';
-import Header from './Header/Header';
-import Clock from './Clock/Clock';
-import DynamicText from './DynamicText/DynamicText';
+import Header from './components/Header/Header';
+import Clock from './components/Clock/Clock';
+import DynamicText from './components/DynamicText/DynamicText';
 
 class App extends Component {
   constructor() {
