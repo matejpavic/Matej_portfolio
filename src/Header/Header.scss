@@ -3,7 +3,7 @@ header {
   position: sticky;
   top: 0;
   color: white;
-  background-color: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(to right, #8181a1, #535e64);
   margin-bottom: 10vh;
   box-sizing: border-box;
   display: flex;
@@ -48,11 +48,12 @@ header {
   display: flex;
   flex-direction: column;
   top: 3vh;
+  left: 5px;
   position: absolute;
   font-size: 2em;
   border-radius: 10%;
   padding: 2% 5%;
-  // padding-left: 5%;
+  animation: navbarSlide 0.5s linear;
   list-style-type: none;
   li {
     a {
@@ -63,5 +64,14 @@ header {
       cursor: pointer;
       color: rgba(255, 255, 255, 0.9);
     }
+  }
+}
+
+@keyframes navbarSlide {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 5px;
   }
 }
