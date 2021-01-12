@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,KAAK;CACb",
+    "mappings": "AAAA,OAAO,CAAC,sEAAI;AAEZ,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,oBAAoB;EACjC,UAAU,EAAE,EAAE;CACf",
     "sources": [
         "DynamicText.scss"
     ],

@@ -7,9 +7,9 @@ const DynamicText = () => {
       className='animation'
       steps={
         [
-          'Hello there', 1000, 
+          'Hello there 👋', 1000, 
           'My name is Matej', 1000,
-          'I am a web developer', 1000
+          'I am a web developer 🧑‍💻', 1000
         ]    
       }
       loop={Infinity}
