@@ -1,8 +1,16 @@
 import { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-import Clock from './components/Clock/Clock';
-import DynamicText from './components/DynamicText/DynamicText';
+import Home from './containers/Home/Home';
+import Projects from './containers/Projects/Projects';
+import About from './containers/About/About';
+import Contact from './containers/Contact/Contact';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 class App extends Component {
   constructor() {
@@ -13,13 +21,23 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <main>
-          <Clock />
-          <DynamicText />
-        </main>
-      </div>
+      <Router>
+        <Header/>
+        <Switch>
+          <Route exact path='/'>
+           <Home />
+          </Route> 
+          <Route exact path='/projects'>
+           <Projects />
+          </Route> 
+          <Route exact path='/about'>
+           <About />
+          </Route> 
+          <Route exact path='/contact'>
+           <Contact />
+          </Route> 
+        </Switch>
+      </Router>
     );
   }
 }
