@@ -55,6 +55,7 @@ header {
   padding: 2% 5%;
   animation: navbarSlide 0.5s linear;
   list-style-type: none;
+  z-index: 1;
   li {
     a {
       text-decoration: none;

@@ -78,6 +78,7 @@ header div a:hover {
   -webkit-animation: navbarSlide 0.5s linear;
           animation: navbarSlide 0.5s linear;
   list-style-type: none;
+  z-index: 1;
 }
 
 .navbarDisplay li a {
