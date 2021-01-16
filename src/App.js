@@ -1,10 +1,10 @@
 import { Component } from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
-import Home from './containers/Home/Home';
-import Projects from './containers/Projects/Projects';
-import About from './containers/About/About';
-import Contact from './containers/Contact/Contact';
+import Home from './pages/Home/Home';
+import Projects from './pages/Projects/Projects';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 
 import {
   BrowserRouter as Router,
