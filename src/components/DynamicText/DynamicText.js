@@ -1,4 +1,4 @@
-import './DynamicText.css';
+import './DynamicText.scss';
 import Typical from 'react-typical';
 
 const DynamicText = () => {

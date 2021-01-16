@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,SAAS;CAC5B",
-    "sources": [
-        "Projects.scss"
-    ],
-    "names": [],
-    "file": "Projects.css"
-}

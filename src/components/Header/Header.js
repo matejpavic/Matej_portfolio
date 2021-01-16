@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.scss';
 import navbarSymbol from './header_images/navbarSymbol.svg';
 import xSymbol from './header_images/xSymbol.svg';
 import React, { useState } from 'react';

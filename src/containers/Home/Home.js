@@ -3,7 +3,7 @@ import { Component } from 'react';
 import Clock from '../../components/Clock/Clock';
 import DynamicText from '../../components/DynamicText/DynamicText';
 
-import './Home.css';
+import './Home.scss';
 
 class Home extends Component {
   constructor() {

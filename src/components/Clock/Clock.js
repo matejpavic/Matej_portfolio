@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Clock.css';
+import './Clock.scss';
 
 function Clock() {
 
