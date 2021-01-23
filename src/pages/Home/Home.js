@@ -9,18 +9,19 @@ class Home extends Component {
   constructor() {
     super()
     this.state = {
+      number: 0
     }
   }
 
   render() {
     return (
-        <div className="App">
-          {/* <Header /> */}
-          <main>
-            <Clock />
-            <DynamicText />
-          </main>
-        </div>
+      <div className="App">
+        {/* <Header /> */}
+        <main>
+          <Clock />
+          <DynamicText />
+        </main>
+      </div>
     );
   }
 }
